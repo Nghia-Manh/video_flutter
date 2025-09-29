@@ -1,0 +1,354 @@
+{
+  "project_info": {
+    "project_number": "1054775269392",
+    "project_id": "login-98270",
+    "storage_bucket": "login-98270.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054775269392:android:3a1551f78ee8b5a6fa1295",
+        "android_client_info": {
+          "package_name": "com.example.fixassets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054775269392-avstnboo8h92f6etvafjc9io1nrc4h6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fixassets",
+            "certificate_hash": "3880dd5bb973e95333d9a80840e9266668db9051"
+          }
+        },
+        {
+          "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qZqEd5gjFdRfFiKiAMQb-rq7pfsg6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054775269392-4iggnmji8m35souahglguc7dgfhcs96t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanlynoibo.vgs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054775269392:android:eed931ca800bc469fa1295",
+        "android_client_info": {
+          "package_name": "com.example.tuan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054775269392-1g4430ao605o9tb0m6b6kqkh12f092bt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tuan",
+            "certificate_hash": "314e9e87ea8eb752650ac4de4155481984865655"
+          }
+        },
+        {
+          "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qZqEd5gjFdRfFiKiAMQb-rq7pfsg6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054775269392-4iggnmji8m35souahglguc7dgfhcs96t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanlynoibo.vgs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054775269392:android:1b1f922b5f395812fa1295",
+        "android_client_info": {
+          "package_name": "com.quanlynoibo.timesheet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054775269392-l7bb0ltfm865b975367e3m36h3ul5lo6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quanlynoibo.timesheet",
+            "certificate_hash": "3880dd5bb973e95333d9a80840e9266668db9051"
+          }
+        },
+        {
+          "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qZqEd5gjFdRfFiKiAMQb-rq7pfsg6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054775269392-4iggnmji8m35souahglguc7dgfhcs96t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanlynoibo.vgs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054775269392:android:d8da458e364270b2fa1295",
+        "android_client_info": {
+          "package_name": "com.quanlynoibo.vgs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054775269392-0bb00t87s7r1rgo43hgegi86fs25q7sp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quanlynoibo.vgs",
+            "certificate_hash": "a925963638d69724f59ca604af4e79abdae69f19"
+          }
+        },
+        {
+          "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qZqEd5gjFdRfFiKiAMQb-rq7pfsg6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054775269392-4iggnmji8m35souahglguc7dgfhcs96t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanlynoibo.vgs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054775269392:android:7421e20cf95fdf0ffa1295",
+        "android_client_info": {
+          "package_name": "com.viettech.app_chung_cu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054775269392-uontq42o9hr3k18lum94etrpigs7h0ng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.viettech.app_chung_cu",
+            "certificate_hash": "314e9e87ea8eb752650ac4de4155481984865655"
+          }
+        },
+        {
+          "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qZqEd5gjFdRfFiKiAMQb-rq7pfsg6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054775269392-4iggnmji8m35souahglguc7dgfhcs96t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanlynoibo.vgs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054775269392:android:f5e318d6692ca482fa1295",
+        "android_client_info": {
+          "package_name": "com.viettech.viettech_video"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qZqEd5gjFdRfFiKiAMQb-rq7pfsg6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054775269392-4iggnmji8m35souahglguc7dgfhcs96t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanlynoibo.vgs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054775269392:android:2bbb4616ba4632a5fa1295",
+        "android_client_info": {
+          "package_name": "com.viettech_chieusang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054775269392-5aajh4n9914nb09rlt35b6vo0voqds1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.viettech_chieusang",
+            "certificate_hash": "314e9e87ea8eb752650ac4de4155481984865655"
+          }
+        },
+        {
+          "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qZqEd5gjFdRfFiKiAMQb-rq7pfsg6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054775269392-4iggnmji8m35souahglguc7dgfhcs96t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanlynoibo.vgs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054775269392:android:279b118a146b2059fa1295",
+        "android_client_info": {
+          "package_name": "info.viettech.gara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054775269392-vt39p5v5bavvoujj1d62oi0mo3cdf08l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.viettech.gara",
+            "certificate_hash": "314e9e87ea8eb752650ac4de4155481984865655"
+          }
+        },
+        {
+          "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qZqEd5gjFdRfFiKiAMQb-rq7pfsg6PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054775269392-4i20gtsg1qu52ri963k3pvujm32tkdsj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054775269392-4iggnmji8m35souahglguc7dgfhcs96t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.quanlynoibo.vgs"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
