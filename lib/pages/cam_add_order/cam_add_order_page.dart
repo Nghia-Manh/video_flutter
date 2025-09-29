@@ -573,6 +573,132 @@ class _CamAddOrderPageState extends State<CamAddOrderPage> {
       // Lưu danh sách order records vào file JSON
       await _persistRecords();
 
+      final order = Orders(
+        qrCode: _currentQr ?? '',
+        dateBegin: _startedAt ?? endedAt,
+        dateEnd: endedAt,
+        fileName: filePath,
+        qrFile: _currentQrImagePath ?? '',
+      );
+      try {
+        final orderbyQR = await API.Order_GetList.call(
+          params: {"Dtime": null, "QRCode": _currentQr ?? '', "Serial": null},
+        );
+        final bool hasExisting =
+            orderbyQR is List && (orderbyQR as List).isNotEmpty;
+        if (hasExisting) {
+          if (mounted) {
+            final bool? confirm = await showDialog<bool>(
+              context: context,
+              builder: (ctx) => AlertDialog(
+                title: const Text('Xác nhận'),
+                content: const Text(
+                  'Đã có đơn hàng. Bạn có muốn xóa đơn hàng cũ và thay thế bằng đơn hàng mới không?',
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.of(ctx).pop(false),
+                    child: const Text('Hủy'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () => Navigator.of(ctx).pop(true),
+                    child: const Text('Đồng ý'),
+                  ),
+                ],
+              ),
+            );
+
+            if (confirm == true) {
+              try {
+                final orderDelete = orderbyQR?.firstWhereOrNull(
+                  (g) => g.qrCode == _currentQr,
+                );
+                if (orderDelete != null) {
+                  await API.Order_Delete.call(params: orderDelete.toJson());
+                }
+                await API.Order_Add.call(params: order.toJson());
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Đã thay thế đơn hàng thành công'),
+                      backgroundColor: Colors.green,
+                    ),
+                  );
+                }
+                try {
+                  Map<String, dynamic> params = {"iQRCode": _currentQr ?? ''};
+                  await API.Order_UploadVideo.call(
+                    params: params,
+                    file: File(filePath),
+                  );
+                } catch (e) {
+                  if (mounted) {
+                    print('Lỗi upload video đơn hàng (thay thế): $e');
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('Có lỗi khi upload video đơn hàng: $e'),
+                        backgroundColor: Colors.red,
+                        duration: Duration(seconds: 3),
+                      ),
+                    );
+                  }
+                }
+              } catch (e) {
+                if (mounted) {
+                  print('Lỗi thay thế đơn hàng: $e');
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Có lỗi khi thay thế đơn hàng: $e'),
+                      backgroundColor: Colors.red,
+                      duration: Duration(seconds: 3),
+                    ),
+                  );
+                }
+              }
+            }
+          }
+        } else {
+          await API.Order_Add.call(params: order.toJson());
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Thêm đơn hàng thành công'),
+                backgroundColor: Colors.green,
+              ),
+            );
+          }
+          try {
+            Map<String, dynamic> params = {"iQRCode": _currentQr ?? ''};
+            await API.Order_UploadVideo.call(
+              params: params,
+              file: File(filePath),
+            );
+          } catch (e) {
+            if (mounted) {
+              print('Lỗi upload video đơn hàng: $e');
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Có lỗi khi upload video đơn hàng: $e'),
+                  backgroundColor: Colors.red,
+                  duration: Duration(seconds: 3),
+                ),
+              );
+            }
+          }
+        }
+      } catch (e) {
+        if (mounted) {
+          print('Lỗi thêm đơn hàng: $e');
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Có lỗi khi thêm đơn hàng: $e'),
+              backgroundColor: Colors.red,
+              duration: Duration(seconds: 3),
+            ),
+          );
+        }
+      }
+
       // Bắt đầu quay video mới với QR code mới
       _currentQr = code;
       _startedAt = DateTime.now();
